@@ -1,1 +1,165 @@
-<h1> hello world </h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hasan Md Razzaque — Resume</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#06b6d4;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0; background:linear-gradient(180deg,#07101a 0%, #081224 100%); color:#e6eef6; -webkit-font-smoothing:antialiased}
+    .container{max-width:980px;margin:32px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,0.7);}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:100px;height:100px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:#02111a}
+    .title{flex:1}
+    h1{margin:0;font-size:24px;letter-spacing:0.2px}
+    p.role{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .actions{display:flex;gap:10px}
+    .btn{background:var(--glass);border:1px solid rgba(255,255,255,0.03);padding:8px 12px;border-radius:8px;color:var(--accent);text-decoration:none;font-weight:600;font-size:13px}
+    nav{display:flex;gap:8px;margin-top:14px}
+    nav a{color:var(--muted);text-decoration:none;font-size:13px;padding:6px 8px;border-radius:8px}
+    nav a.active, nav a:hover{background:rgba(255,255,255,0.02);color:#fff}
+    main{display:grid;grid-template-columns:1fr 340px;gap:22px;margin-top:20px}
+    .card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px}
+    .section{margin-bottom:14px}
+    .section h3{margin:0 0 10px;color:var(--accent);font-size:14px}
+    .muted{color:var(--muted);font-size:14px}
+    ul{padding-left:18px;margin:6px 0}
+    .skill-badges{display:flex;flex-wrap:wrap;gap:8px}
+    .badge{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .contact-list{display:flex;flex-direction:column;gap:10px}
+    .contact-item{display:flex;gap:10px;align-items:center}
+    .small{font-size:13px;color:var(--muted)}
+    .projects .proj{padding:10px;border-radius:8px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);margin-bottom:8px}
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    /* responsive */
+    @media(max-width:880px){main{grid-template-columns:1fr;}
+      .avatar{width:80px;height:80px;font-size:22px}
+      .container{margin:12px;padding:18px}
+    }
+    /* tiny utilities */
+    .sep{height:1px;background:rgba(255,255,255,0.02);margin:12px 0;border-radius:2px}
+    .link{color:var(--accent);text-decoration:none}
+    .copy{cursor:pointer;padding:6px;border-radius:8px;background:rgba(255,255,255,0.01);border:1px solid rgba(255,255,255,0.02)}
+  </style>
+</head>
+<body>
+  <div class="container" id="top">
+    <header>
+      <div class="avatar">HR</div>
+      <div class="title">
+        <h1>HASAN MD RAZZAQUE</h1>
+        <p class="role">Backend Developer • Node.js · Express · CodeIgniter · MySQL</p>
+        <nav id="nav">
+          <a href="#summary">Summary</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+        </nav>
+      </div>
+      <div class="actions">
+        <a class="btn" href="mailto:hasanrazzaque123@gmail.com">Email</a>
+        <a class="btn" id="downloadBtn" href="https://github.com/RAZA-72" target="_blank">GitHub</a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="card section" id="summary">
+          <h3>SUMMARY</h3>
+          <p class="muted">Developed robust APIs and backend systems using Node.js and Express.js, ensuring seamless integration with frontend interfaces. Experienced with CodeIgniter 4 and implementing secure RESTful APIs for real-world applications.</p>
+        </div>
+
+        <div class="card section" id="experience">
+          <h3>EXPERIENCE</h3>
+          <div>
+            <strong>Backend Developer</strong> — Milleniance Softnet Pvt Ltd, Noida<br>
+            <span class="small">June 2024 - present</span>
+            <p class="muted">Working on backend systems and APIs.</p>
+          </div>
+          <div style="margin-top:10px">
+            <strong>Software Developer Intern</strong> — DSU INFOTECH, Vadodara<br>
+            <span class="small">Jan 2024 – May 2024</span>
+            <p class="muted">Contributed to backend modules and integrations.</p>
+          </div>
+        </div>
+
+        <div class="card section" id="projects">
+          <h3>PROJECTS</h3>
+          <div class="projects">
+            <div class="proj">
+              <strong>Humnafs — E-commerce (CodeIgniter 4)</strong>
+              <p class="muted">Product management, order processing, user authentication; MVC best practices.</p>
+            </div>
+            <div class="proj">
+              <strong>Deendayal Seva Parishad — Website Backend</strong>
+              <p class="muted">Donation & volunteer management system using CodeIgniter 4.</p>
+            </div>
+            <div class="proj">
+              <strong>Deendayal Seva Pratisthan — App Backend</strong>
+              <p class="muted">Node.js backend offering RESTful APIs for a cross-platform mobile app.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card section">
+          <h3>CONTACT</h3>
+          <div class="contact-list">
+            <div class="contact-item"><div class="small">📍</div><div><div class="small">Padmavati society limbayat, Surat 394210</div></div></div>
+            <div class="contact-item"><div class="small">📱</div><div><a class="link small" href="tel:+919106282104">+91 9106282104</a></div></div>
+            <div class="contact-item"><div class="small">✉️</div><div><a class="link small" id="emailLink" href="mailto:hasanrazzaque123@gmail.com">hasanrazzaque123@gmail.com</a> <button class="copy" id="copyEmail" title="Copy email">Copy</button></div></div>
+            <div class="contact-item"><div class="small">🔗</div><div><a class="link small" href="https://www.linkedin.com/in/hasan-md-razzaque-4984861aa/" target="_blank">LinkedIn</a></div></div>
+            <div class="contact-item"><div class="small">🐙</div><div><a class="link small" href="https://github.com/RAZA-72" target="_blank">github.com/RAZA-72</a></div></div>
+          </div>
+          <div class="sep"></div>
+          <h3>SKILLS</h3>
+          <div class="skill-badges">
+            <span class="badge">Node.js</span>
+            <span class="badge">Express.js</span>
+            <span class="badge">CodeIgniter 4</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">MongoDB</span>
+            <span class="badge">HTML/CSS/JS</span>
+            <span class="badge">Git & GitHub</span>
+            <span class="badge">Postman</span>
+          </div>
+          <div class="sep"></div>
+
+          <h3>EDUCATION</h3>
+          <div>
+            <strong>B.Tech — CSE</strong><br>
+            <span class="small">Bhagwan Mahavir University, Surat</span><br>
+            <span class="small">Nov 2021 – June 2024</span>
+          </div>
+          <div class="sep"></div>
+
+          <h3>LANGUAGES</h3>
+          <div class="small">English · Hindi · Gujarati</div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>Want changes? Click any section in the nav to jump. • <a href="#top" class="link">Top</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // smooth scroll for nav
+    document.querySelectorAll('nav a').forEach(a=>{a.addEventListener('click', e=>{e.preventDefault(); document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'}); document.querySelectorAll('nav a').forEach(x=>x.classList.remove('active')); a.classList.add('active');})});
+
+    // copy email
+    document.getElementById('copyEmail').addEventListener('click', async ()=>{
+      const email = 'hasanrazzaque123@gmail.com';
+      try{ await navigator.clipboard.writeText(email); alert('Email copied to clipboard'); }catch(e){ prompt('Copy this email', email); }
+    });
+
+    // small mobile-friendly focus
+    if(location.hash){ const el = document.querySelector(location.hash); if(el) el.scrollIntoView(); }
+  </script>
+</body>
+</html>
